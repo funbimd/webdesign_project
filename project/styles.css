@@ -1,0 +1,345 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #b22222; /* Crimson */
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #8b0000;
+    border-radius: 5px;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('/images/jewelry-banner.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+    min-height: 80vh;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    background-color: #fff;
+    color: #b22222;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #e6e6e6;
+}
+
+.cta-btn, .product-card button, .testimonial-card {
+    transition: transform 0.3s ease;
+}
+
+.cta-btn:hover, .product-card button:hover, .testimonial-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+/*Featured products*/
+.featured-products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: #b30000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #a10000;
+}
+
+/*Testimonials*/
+.testimonials {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.testimonial-card h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #b30000;
+}
+
+
+/* Products section */
+.products {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 18px;
+    color: #b22222;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: #b22222;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #8b0000;
+}
+
+/* About section */
+.about {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Contact section */
+.contact {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form input, .contact form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact form button {
+    background-color: #b22222;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #8b0000;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #b30000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
